@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CryptoBomber</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap');
+      
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: #eef2f5;
+        color: #000000;
+      }
+      
+      /* Neo-Brutalism Utilities */
+      .neo-border {
+        border: 2px solid #000000;
+      }
+      
+      .neo-shadow {
+        box-shadow: 4px 4px 0px 0px #000000;
+      }
+      
+      .neo-card {
+        background-color: #ffffff;
+        border: 2px solid #000000;
+        box-shadow: 4px 4px 0px 0px #000000;
+      }
+
+      .neo-input {
+        background-color: #ffffff;
+        border: 2px solid #000000;
+        outline: none;
+        color: #000000;
+        transition: all 0.2s;
+      }
+      .neo-input:focus {
+        box-shadow: 4px 4px 0px 0px #000000;
+        transform: translate(-2px, -2px);
+      }
+
+      /* Animations */
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fadeIn {
+        animation: fadeIn 0.4s ease-out forwards;
+      }
+      
+      @keyframes slideUp {
+        from { transform: translateY(100%); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+      }
+      .animate-slideUp {
+        animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
